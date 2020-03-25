@@ -18,9 +18,11 @@ def area_of_triangle(triangle_base = 1, triangle_height = 1):
 def area_of_circle(circle_radius = 1):
     area_circle = 3.1415 * circle_radius * circle_radius
     return area_circle
+  
     
-
 user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
+
+
 if __name__ == "__main__": 
     while(user_choice != ''):
         if user_choice == 'rectangle':
