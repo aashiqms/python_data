@@ -21,28 +21,28 @@ def area_of_circle(circle_radius = 1):
     
 
 user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
-    
-while(user_choice != ''):
-    if user_choice == 'rectangle':
-        width = int(input('enter width: '))
-        length = int(input('enter length: '))
-        let = area_of_rectangle(width, length)
-        print('the area of rectangle is {}'.format(let)) 
-        user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
-    elif user_choice == 'triangle':
-        triangle_base = int(input('enter base: '))
-        triangle_height = int(input('enter height '))
-        let = area_of_triangle(triangle_base, triangle_height)
-        print('the area of triangle is {}'.format(let))
-        user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')       
-    elif user_choice == 'circle':
-        circle_radius = int(input('enter radius: '))
-        let = area_of_circle(circle_radius)
-        print('the area of circle is {:.3f}'.format(let))
-        user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
-    else:
-        print('wrong name entered: ')
-        user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
+if __name__ == "__main__": 
+    while(user_choice != ''):
+        if user_choice == 'rectangle':
+            width = int(input('enter width: '))
+            length = int(input('enter length: '))
+            let = area_of_rectangle(width, length)
+            print('the area of rectangle is {}'.format(let)) 
+            user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
+        elif user_choice == 'triangle':
+            triangle_base = int(input('enter base: '))
+            triangle_height = int(input('enter height '))
+            let = area_of_triangle(triangle_base, triangle_height)
+            print('the area of triangle is {}'.format(let))
+            user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')       
+        elif user_choice == 'circle':
+            circle_radius = int(input('enter radius: '))
+            let = area_of_circle(circle_radius)
+            print('the area of circle is {:.3f}'.format(let))
+            user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
+        else:
+            print('wrong name entered: ')
+            user_choice = input('enter the shape for which area to be found "rectangle", "triangle", "circle" ')
 
     
     
